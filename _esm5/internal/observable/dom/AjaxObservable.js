@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._.._util_root,.._.._util_tryCatch,.._.._util_errorObject,.._.._Observable,.._.._Subscriber,.._.._.._internal_operators_map PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._.._util_root,.._.._util_tryCatch,.._.._util_errorObject,.._.._Observable,.._.._Subscriber,.._.._.._internal_operators_map PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { root } from '../../util/root';
 import { tryCatch } from '../../util/tryCatch';
 import { errorObject } from '../../util/errorObject';
@@ -86,8 +75,8 @@ export function ajaxGetJSON(url, headers) {
  * @extends {Ignored}
  * @hide true
  */
-var AjaxObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(AjaxObservable, _super);
+var AjaxObservable = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(AjaxObservable, _super);
     function AjaxObservable(urlOrRequest) {
         var _this = _super.call(this) || this;
         var request = {
@@ -164,8 +153,8 @@ export { AjaxObservable };
  * @ignore
  * @extends {Ignored}
  */
-var AjaxSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(AjaxSubscriber, _super);
+var AjaxSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(AjaxSubscriber, _super);
     function AjaxSubscriber(destination, request) {
         var _this = _super.call(this, destination) || this;
         _this.request = request;
@@ -373,8 +362,8 @@ export { AjaxResponse };
  *
  * @class AjaxError
  */
-var AjaxError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(AjaxError, _super);
+var AjaxError = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(AjaxError, _super);
     function AjaxError(message, xhr, request) {
         var _this = _super.call(this, message) || this;
         _this.message = message;
@@ -416,8 +405,8 @@ function parseXhrResponse(responseType, xhr) {
  *
  * @class AjaxTimeoutError
  */
-var AjaxTimeoutError = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(AjaxTimeoutError, _super);
+var AjaxTimeoutError = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(AjaxTimeoutError, _super);
     function AjaxTimeoutError(xhr, request) {
         var _this = _super.call(this, 'ajax timeout', xhr, request) || this;
         Object.setPrototypeOf(_this, AjaxTimeoutError.prototype);

@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._Subscriber PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._Subscriber PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { Subscriber } from '../Subscriber';
 export function refCount() {
     return function refCountOperatorFunction(source) {
@@ -33,8 +22,8 @@ var RefCountOperator = /*@__PURE__*/ (/*@__PURE__*/ function () {
     };
     return RefCountOperator;
 }());
-var RefCountSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(RefCountSubscriber, _super);
+var RefCountSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(RefCountSubscriber, _super);
     function RefCountSubscriber(destination, connectable) {
         var _this = _super.call(this, destination) || this;
         _this.connectable = connectable;

@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._util_isScheduler,.._util_isArray,.._OuterSubscriber,.._util_subscribeToResult,._fromArray PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._util_isScheduler,.._util_isArray,.._OuterSubscriber,.._util_subscribeToResult,._fromArray PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { isScheduler } from '../util/isScheduler';
 import { isArray } from '../util/isArray';
 import { OuterSubscriber } from '../OuterSubscriber';
@@ -161,8 +150,8 @@ export { CombineLatestOperator };
  * @ignore
  * @extends {Ignored}
  */
-var CombineLatestSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(CombineLatestSubscriber, _super);
+var CombineLatestSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(CombineLatestSubscriber, _super);
     function CombineLatestSubscriber(destination, project) {
         var _this = _super.call(this, destination) || this;
         _this.project = project;

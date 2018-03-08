@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._util_tryCatch,.._util_errorObject,.._util_subscribeToResult,.._OuterSubscriber PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._util_tryCatch,.._util_errorObject,.._util_subscribeToResult,.._OuterSubscriber PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { tryCatch } from '../util/tryCatch';
 import { errorObject } from '../util/errorObject';
 import { subscribeToResult } from '../util/subscribeToResult';
@@ -69,8 +58,8 @@ export { MergeScanOperator };
  * @ignore
  * @extends {Ignored}
  */
-var MergeScanSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(MergeScanSubscriber, _super);
+var MergeScanSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(MergeScanSubscriber, _super);
     function MergeScanSubscriber(destination, accumulator, acc, concurrent) {
         var _this = _super.call(this, destination) || this;
         _this.accumulator = accumulator;

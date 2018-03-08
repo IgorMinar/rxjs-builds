@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._util_isArray,._fromArray,.._OuterSubscriber,.._util_subscribeToResult PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._util_isArray,._fromArray,.._OuterSubscriber,.._util_subscribeToResult PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { isArray } from '../util/isArray';
 import { fromArray } from './fromArray';
 import { OuterSubscriber } from '../OuterSubscriber';
@@ -46,8 +35,8 @@ export { RaceOperator };
  * @ignore
  * @extends {Ignored}
  */
-var RaceSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(RaceSubscriber, _super);
+var RaceSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(RaceSubscriber, _super);
     function RaceSubscriber(destination) {
         var _this = _super.call(this, destination) || this;
         _this.hasFirst = false;

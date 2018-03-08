@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._Subject,.._Subscription,._SubscriptionLoggable,.._util_applyMixins PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._Subject,.._Subscription,._SubscriptionLoggable,.._util_applyMixins PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { Subject } from '../Subject';
 import { Subscription } from '../Subscription';
 import { SubscriptionLoggable } from './SubscriptionLoggable';
@@ -20,8 +9,8 @@ import { applyMixins } from '../util/applyMixins';
  * @ignore
  * @extends {Ignored}
  */
-var HotObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(HotObservable, _super);
+var HotObservable = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(HotObservable, _super);
     function HotObservable(messages, scheduler) {
         var _this = _super.call(this) || this;
         _this.messages = messages;

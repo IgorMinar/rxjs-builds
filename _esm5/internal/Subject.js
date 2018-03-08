@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START ._Observable,._Subscriber,._Subscription,._util_ObjectUnsubscribedError,._SubjectSubscription,.._internal_symbol_rxSubscriber PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,._Observable,._Subscriber,._Subscription,._util_ObjectUnsubscribedError,._SubjectSubscription,.._internal_symbol_rxSubscriber PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { Observable } from './Observable';
 import { Subscriber } from './Subscriber';
 import { Subscription } from './Subscription';
@@ -20,8 +9,8 @@ import { rxSubscriber as rxSubscriberSymbol } from '../internal/symbol/rxSubscri
 /**
  * @class SubjectSubscriber<T>
  */
-var SubjectSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(SubjectSubscriber, _super);
+var SubjectSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(SubjectSubscriber, _super);
     function SubjectSubscriber(destination) {
         var _this = _super.call(this, destination) || this;
         _this.destination = destination;
@@ -33,8 +22,8 @@ export { SubjectSubscriber };
 /**
  * @class Subject<T>
  */
-var Subject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(Subject, _super);
+var Subject = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(Subject, _super);
     function Subject() {
         var _this = _super.call(this) || this;
         _this.observers = [];
@@ -137,8 +126,8 @@ export { Subject };
 /**
  * @class AnonymousSubject<T>
  */
-var AnonymousSubject = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(AnonymousSubject, _super);
+var AnonymousSubject = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(AnonymousSubject, _super);
     function AnonymousSubject(destination, source) {
         var _this = _super.call(this) || this;
         _this.destination = destination;

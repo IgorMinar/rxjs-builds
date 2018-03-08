@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._Subscription,.._util_tryCatch,.._util_errorObject,.._OuterSubscriber,.._util_subscribeToResult PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._Subscription,.._util_tryCatch,.._util_errorObject,.._OuterSubscriber,.._util_subscribeToResult PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { Subscription } from '../Subscription';
 import { tryCatch } from '../util/tryCatch';
 import { errorObject } from '../util/errorObject';
@@ -68,8 +57,8 @@ var BufferWhenOperator = /*@__PURE__*/ (/*@__PURE__*/ function () {
  * @ignore
  * @extends {Ignored}
  */
-var BufferWhenSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(BufferWhenSubscriber, _super);
+var BufferWhenSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(BufferWhenSubscriber, _super);
     function BufferWhenSubscriber(destination, closingSelector) {
         var _this = _super.call(this, destination) || this;
         _this.closingSelector = closingSelector;

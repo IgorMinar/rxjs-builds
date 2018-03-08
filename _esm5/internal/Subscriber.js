@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START ._util_isFunction,._Observer,._Subscription,.._internal_symbol_rxSubscriber PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,._util_isFunction,._Observer,._Subscription,.._internal_symbol_rxSubscriber PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { isFunction } from './util/isFunction';
 import { empty as emptyObserver } from './Observer';
 import { Subscription } from './Subscription';
@@ -25,8 +14,8 @@ import { rxSubscriber as rxSubscriberSymbol } from '../internal/symbol/rxSubscri
  *
  * @class Subscriber<T>
  */
-var Subscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(Subscriber, _super);
+var Subscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(Subscriber, _super);
     /**
      * @param {Observer|function(value: T): void} [destinationOrNext] A partially
      * defined Observer or a `next` callback function.
@@ -153,8 +142,8 @@ export { Subscriber };
  * @ignore
  * @extends {Ignored}
  */
-var SafeSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(SafeSubscriber, _super);
+var SafeSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(SafeSubscriber, _super);
     function SafeSubscriber(observerOrNext, error, complete) {
         var _this = _super.call(this) || this;
         var next;

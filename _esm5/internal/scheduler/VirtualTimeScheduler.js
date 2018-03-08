@@ -1,20 +1,9 @@
-/** PURE_IMPORTS_START ._AsyncAction,._AsyncScheduler PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,._AsyncAction,._AsyncScheduler PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { AsyncAction } from './AsyncAction';
 import { AsyncScheduler } from './AsyncScheduler';
-var VirtualTimeScheduler = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(VirtualTimeScheduler, _super);
+var VirtualTimeScheduler = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(VirtualTimeScheduler, _super);
     function VirtualTimeScheduler(SchedulerAction, maxFrames) {
         if (SchedulerAction === void 0) {
             SchedulerAction = VirtualAction;
@@ -57,8 +46,8 @@ export { VirtualTimeScheduler };
  * @ignore
  * @extends {Ignored}
  */
-var VirtualAction = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(VirtualAction, _super);
+var VirtualAction = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(VirtualAction, _super);
     function VirtualAction(scheduler, work, index) {
         if (index === void 0) {
             index = scheduler.index += 1;

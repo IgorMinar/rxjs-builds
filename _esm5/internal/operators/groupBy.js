@@ -1,16 +1,5 @@
-/** PURE_IMPORTS_START .._Subscriber,.._Subscription,.._Observable,.._Subject PURE_IMPORTS_END */
-var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b)
-            if (b.hasOwnProperty(p))
-                d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
+/** PURE_IMPORTS_START tslib,.._Subscriber,.._Subscription,.._Observable,.._Subject PURE_IMPORTS_END */
+import * as tslib_1 from "tslib";
 import { Subscriber } from '../Subscriber';
 import { Subscription } from '../Subscription';
 import { Observable } from '../Observable';
@@ -109,8 +98,8 @@ var GroupByOperator = /*@__PURE__*/ (/*@__PURE__*/ function () {
  * @ignore
  * @extends {Ignored}
  */
-var GroupBySubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(GroupBySubscriber, _super);
+var GroupBySubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(GroupBySubscriber, _super);
     function GroupBySubscriber(destination, keySelector, elementSelector, durationSelector, subjectSelector) {
         var _this = _super.call(this, destination) || this;
         _this.keySelector = keySelector;
@@ -210,8 +199,8 @@ var GroupBySubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
  * @ignore
  * @extends {Ignored}
  */
-var GroupDurationSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(GroupDurationSubscriber, _super);
+var GroupDurationSubscriber = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(GroupDurationSubscriber, _super);
     function GroupDurationSubscriber(key, group, parent) {
         var _this = _super.call(this, group) || this;
         _this.key = key;
@@ -239,8 +228,8 @@ var GroupDurationSubscriber = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
  *
  * @class GroupedObservable<K, T>
  */
-var GroupedObservable = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(GroupedObservable, _super);
+var GroupedObservable = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(GroupedObservable, _super);
     function GroupedObservable(key, groupSubject, refCountSubscription) {
         var _this = _super.call(this) || this;
         _this.key = key;
@@ -265,8 +254,8 @@ export { GroupedObservable };
  * @ignore
  * @extends {Ignored}
  */
-var InnerRefCountSubscription = /*@__PURE__*/ (/*@__PURE__*/ function (_super) {
-    __extends(InnerRefCountSubscription, _super);
+var InnerRefCountSubscription = /*@__PURE__*/ (function (_super) {
+    tslib_1.__extends(InnerRefCountSubscription, _super);
     function InnerRefCountSubscription(parent) {
         var _this = _super.call(this) || this;
         _this.parent = parent;
