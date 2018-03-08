@@ -1,7 +1,7 @@
-/** PURE_IMPORTS_START .._.._observable_combineLatest,.._.._observable_of,.._..__util_isArray PURE_IMPORTS_END */
+/** PURE_IMPORTS_START .._.._observable_combineLatest,.._.._observable_of,.._.._util_isArray PURE_IMPORTS_END */
 import { CombineLatestOperator } from '../../observable/combineLatest';
 import { of } from '../../observable/of';
-import { isArray } from '../..//util/isArray';
+import { isArray } from '../../util/isArray';
 /* tslint:enable:max-line-length */
 /**
  * Combines multiple Observables to create an Observable whose values are

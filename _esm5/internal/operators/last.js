@@ -1,4 +1,4 @@
-/** PURE_IMPORTS_START .._Subscriber,..__util_EmptyError PURE_IMPORTS_END */
+/** PURE_IMPORTS_START .._Subscriber,.._util_EmptyError PURE_IMPORTS_END */
 var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -12,7 +12,7 @@ var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
     };
 })();
 import { Subscriber } from '../Subscriber';
-import { EmptyError } from '..//util/EmptyError';
+import { EmptyError } from '../util/EmptyError';
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
  * It optionally takes a predicate function as a parameter, in which case, rather than emitting

@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var Subscriber_1 = require("../Subscriber");
-var EmptyError_1 = require("..//util/EmptyError");
+var EmptyError_1 = require("../util/EmptyError");
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.

@@ -1,5 +1,5 @@
 import { async } from '../../scheduler/async';
-import { isScheduler } from '../..//util/isScheduler';
+import { isScheduler } from '../../util/isScheduler';
 import { bufferTime as higherOrder } from '../../operators/bufferTime';
 /* tslint:enable:max-line-length */
 /**

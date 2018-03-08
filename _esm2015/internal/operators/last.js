@@ -1,5 +1,5 @@
 import { Subscriber } from '../Subscriber';
-import { EmptyError } from '..//util/EmptyError';
+import { EmptyError } from '../util/EmptyError';
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
  * It optionally takes a predicate function as a parameter, in which case, rather than emitting

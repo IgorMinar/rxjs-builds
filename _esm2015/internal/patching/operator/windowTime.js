@@ -1,6 +1,6 @@
 import { async } from '../../scheduler/async';
-import { isNumeric } from '../..//util/isNumeric';
-import { isScheduler } from '../..//util/isScheduler';
+import { isNumeric } from '../../util/isNumeric';
+import { isScheduler } from '../../util/isScheduler';
 import { windowTime as higherOrder } from '../../operators/windowTime';
 export function windowTime(windowTimeSpan) {
     let scheduler = async;

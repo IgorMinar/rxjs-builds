@@ -15,8 +15,8 @@ var Subscriber_1 = require("../../Subscriber");
 var Observable_1 = require("../../Observable");
 var Subscription_1 = require("../../Subscription");
 var ReplaySubject_1 = require("../../ReplaySubject");
-var tryCatch_1 = require("../..//util/tryCatch");
-var errorObject_1 = require("../..//util/errorObject");
+var tryCatch_1 = require("../../util/tryCatch");
+var errorObject_1 = require("../../util/errorObject");
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}

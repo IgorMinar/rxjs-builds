@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var combineLatest_1 = require("../../observable/combineLatest");
 var of_1 = require("../../observable/of");
-var isArray_1 = require("../..//util/isArray");
+var isArray_1 = require("../../util/isArray");
 /* tslint:enable:max-line-length */
 /**
  * Combines multiple Observables to create an Observable whose values are

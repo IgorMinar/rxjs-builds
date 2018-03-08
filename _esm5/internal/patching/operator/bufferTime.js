@@ -1,6 +1,6 @@
-/** PURE_IMPORTS_START .._.._scheduler_async,.._..__util_isScheduler,.._.._operators_bufferTime PURE_IMPORTS_END */
+/** PURE_IMPORTS_START .._.._scheduler_async,.._.._util_isScheduler,.._.._operators_bufferTime PURE_IMPORTS_END */
 import { async } from '../../scheduler/async';
-import { isScheduler } from '../..//util/isScheduler';
+import { isScheduler } from '../../util/isScheduler';
 import { bufferTime as higherOrder } from '../../operators/bufferTime';
 /* tslint:enable:max-line-length */
 /**

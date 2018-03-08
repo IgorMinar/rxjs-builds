@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var async_1 = require("../../scheduler/async");
-var isScheduler_1 = require("../..//util/isScheduler");
+var isScheduler_1 = require("../../util/isScheduler");
 var bufferTime_1 = require("../../operators/bufferTime");
 /* tslint:enable:max-line-length */
 /**

@@ -10,9 +10,9 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var root_1 = require("../..//util/root");
-var tryCatch_1 = require("../..//util/tryCatch");
-var errorObject_1 = require("../..//util/errorObject");
+var root_1 = require("../../util/root");
+var tryCatch_1 = require("../../util/tryCatch");
+var errorObject_1 = require("../../util/errorObject");
 var Observable_1 = require("../../Observable");
 var Subscriber_1 = require("../../Subscriber");
 var map_1 = require("../../../internal/operators/map");

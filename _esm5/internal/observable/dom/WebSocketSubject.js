@@ -1,4 +1,4 @@
-/** PURE_IMPORTS_START .._.._Subject,.._.._Subscriber,.._.._Observable,.._.._Subscription,.._.._ReplaySubject,.._..__util_tryCatch,.._..__util_errorObject PURE_IMPORTS_END */
+/** PURE_IMPORTS_START .._.._Subject,.._.._Subscriber,.._.._Observable,.._.._Subscription,.._.._ReplaySubject,.._.._util_tryCatch,.._.._util_errorObject PURE_IMPORTS_END */
 var __extends = (this && this.__extends) || /*@__PURE__*/ (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -16,8 +16,8 @@ import { Subscriber } from '../../Subscriber';
 import { Observable } from '../../Observable';
 import { Subscription } from '../../Subscription';
 import { ReplaySubject } from '../../ReplaySubject';
-import { tryCatch } from '../..//util/tryCatch';
-import { errorObject } from '../..//util/errorObject';
+import { tryCatch } from '../../util/tryCatch';
+import { errorObject } from '../../util/errorObject';
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}

@@ -1,7 +1,7 @@
-/** PURE_IMPORTS_START .._.._scheduler_async,.._..__util_isNumeric,.._..__util_isScheduler,.._.._operators_windowTime PURE_IMPORTS_END */
+/** PURE_IMPORTS_START .._.._scheduler_async,.._.._util_isNumeric,.._.._util_isScheduler,.._.._operators_windowTime PURE_IMPORTS_END */
 import { async } from '../../scheduler/async';
-import { isNumeric } from '../..//util/isNumeric';
-import { isScheduler } from '../..//util/isScheduler';
+import { isNumeric } from '../../util/isNumeric';
+import { isScheduler } from '../../util/isScheduler';
 import { windowTime as higherOrder } from '../../operators/windowTime';
 export function windowTime(windowTimeSpan) {
     var scheduler = async;

@@ -1,6 +1,6 @@
 import { CombineLatestOperator } from '../../observable/combineLatest';
 import { of } from '../../observable/of';
-import { isArray } from '../..//util/isArray';
+import { isArray } from '../../util/isArray';
 /* tslint:enable:max-line-length */
 /**
  * Combines multiple Observables to create an Observable whose values are

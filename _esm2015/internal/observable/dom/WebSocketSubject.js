@@ -3,8 +3,8 @@ import { Subscriber } from '../../Subscriber';
 import { Observable } from '../../Observable';
 import { Subscription } from '../../Subscription';
 import { ReplaySubject } from '../../ReplaySubject';
-import { tryCatch } from '../..//util/tryCatch';
-import { errorObject } from '../..//util/errorObject';
+import { tryCatch } from '../../util/tryCatch';
+import { errorObject } from '../../util/errorObject';
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
