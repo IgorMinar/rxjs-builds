@@ -49,4 +49,4 @@ cd -
   echo ""
   echo ""
   echo "Successfully staged build $BUILD_SCM_VERSION."
-  echo "  Don't forget to publish it with: git push origin --tags"
+  echo "  Don't forget to publish it with: git push origin --all"
