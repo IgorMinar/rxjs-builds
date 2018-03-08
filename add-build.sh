@@ -39,7 +39,7 @@ cd ../rxjs
 cd -
   
   shopt -s extglob
-  git rm -rf --quiet !(LICENSE|add-build.sh)
+  # git rm -rf --quiet !(LICENSE|add-build.sh)
   mv ../rxjs/dist/package/* .
   git commit --all -m "rxjs build $BUILD_SCM_VERSION"
   git tag $BUILD_SCM_VERSION
