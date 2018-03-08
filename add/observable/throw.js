@@ -1,0 +1,7 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Observable_1 = require("../../internal/Observable");
+var throwError_1 = require("../../internal/observable/throwError");
+Observable_1.Observable.throw = throwError_1.throwError;
+Observable_1.Observable.throwError = throwError_1.throwError;
+//# sourceMappingURL=throw.js.map
