@@ -1,4 +1,5 @@
 import { Observable } from '../Observable';
+const toString = Object.prototype.toString;
 /* tslint:enable:max-line-length */
 /**
  * Creates an Observable that emits events of a specific type coming from the

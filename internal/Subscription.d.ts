@@ -18,6 +18,12 @@ export declare class Subscription implements SubscriptionLike {
      * @type {boolean}
      */
     closed: boolean;
+    /** @internal */
+    protected _parent: Subscription;
+    /** @internal */
+    protected _parents: Subscription[];
+    /** @internal */
+    private _subscriptions;
     /**
      * @param {function(): void} [unsubscribe] A function describing how to
      * perform the disposal of resources when the `unsubscribe` method is called.
@@ -56,4 +62,6 @@ export declare class Subscription implements SubscriptionLike {
      * @return {void}
      */
     remove(subscription: Subscription): void;
+    /** @internal */
+    private _addParent(parent);
 }

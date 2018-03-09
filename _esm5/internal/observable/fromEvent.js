@@ -1,5 +1,6 @@
 /** PURE_IMPORTS_START .._Observable PURE_IMPORTS_END */
 import { Observable } from '../Observable';
+var toString = Object.prototype.toString;
 /* tslint:enable:max-line-length */
 /**
  * Creates an Observable that emits events of a specific type coming from the

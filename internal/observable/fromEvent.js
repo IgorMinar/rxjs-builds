@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Observable_1 = require("../Observable");
+var toString = Object.prototype.toString;
 /* tslint:enable:max-line-length */
 /**
  * Creates an Observable that emits events of a specific type coming from the
