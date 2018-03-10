@@ -12,6 +12,16 @@ import { OperatorFunction, PartialObserver, Subscribable } from '../internal/typ
  */
 export declare class Observable<T> implements Subscribable<T> {
     /**
+     * The source observable to get values from. This should only be used when
+     * overriding {@link lift}.
+     */
+    protected source: Observable<any>;
+    /**
+     * The operator definution to use as part of the operator chain. This should
+     * only be used when overriding {@link lift}.
+     */
+    protected operator: Operator<any, T>;
+    /**
      * @constructor
      * @param {Function} subscribe the function that is called when the Observable is
      * initially subscribed to. This function is given a Subscriber, to which new values
