@@ -1,4 +1,4 @@
-import { SchedulerAction, SchedulerLike } from '../types';
+import { SchedulerLike } from '../types';
 import { Observable } from '../Observable';
 /**
  * Creates an Observable that emits a sequence of numbers within a specified
@@ -31,5 +31,3 @@ import { Observable } from '../Observable';
  * @owner Observable
  */
 export declare function range(start?: number, count?: number, scheduler?: SchedulerLike): Observable<number>;
-/** @internal */
-export declare function dispatch(this: SchedulerAction<any>, state: any): void;

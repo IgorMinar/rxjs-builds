@@ -11,12 +11,6 @@ import { OperatorFunction, PartialObserver, Subscribable } from '../internal/typ
  * @class Observable<T>
  */
 export declare class Observable<T> implements Subscribable<T> {
-    /** @internal */
-    _isScalar: boolean;
-    /** @internal */
-    protected source: Observable<any>;
-    /** @internal */
-    protected operator: Operator<any, T>;
     /**
      * @constructor
      * @param {Function} subscribe the function that is called when the Observable is
@@ -53,8 +47,6 @@ export declare class Observable<T> implements Subscribable<T> {
      *  rejects with the handled error
      */
     forEach(next: (value: T) => void, promiseCtor?: PromiseConstructorLike): PromiseLike<void>;
-    /** @internal */
-    protected _subscribe(subscriber: Subscriber<any>): TeardownLogic;
     static if: typeof iif;
     pipe(): Observable<T>;
     pipe<A>(op1: OperatorFunction<T, A>): Observable<A>;
