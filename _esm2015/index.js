@@ -1,6 +1,7 @@
 /* Observable */
 export { Observable } from './internal/Observable';
 export { ConnectableObservable } from './internal/observable/ConnectableObservable';
+export { observable } from './internal/symbol/observable';
 /* Subjects */
 export { Subject } from './internal/Subject';
 export { BehaviorSubject } from './internal/BehaviorSubject';

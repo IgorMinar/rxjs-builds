@@ -1,6 +1,7 @@
 export { Observable } from './internal/Observable';
 export { ConnectableObservable } from './internal/observable/ConnectableObservable';
 export { Operator } from './internal/Operator';
+export { observable } from './internal/symbol/observable';
 export { Subject } from './internal/Subject';
 export { BehaviorSubject } from './internal/BehaviorSubject';
 export { ReplaySubject } from './internal/ReplaySubject';

@@ -5,6 +5,8 @@ var Observable_1 = require("./internal/Observable");
 exports.Observable = Observable_1.Observable;
 var ConnectableObservable_1 = require("./internal/observable/ConnectableObservable");
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
+var observable_1 = require("./internal/symbol/observable");
+exports.observable = observable_1.observable;
 /* Subjects */
 var Subject_1 = require("./internal/Subject");
 exports.Subject = Subject_1.Subject;
