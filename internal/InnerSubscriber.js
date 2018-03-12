@@ -13,6 +13,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Subscriber_1 = require("./Subscriber");
 /**
  * We need this JSDoc comment for affecting ESDoc.
+ * @internal
  * @ignore
  * @extends {Ignored}
  */

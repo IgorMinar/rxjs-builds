@@ -1,6 +1,7 @@
 import { Subscriber } from './Subscriber';
 /**
  * We need this JSDoc comment for affecting ESDoc.
+ * @internal
  * @ignore
  * @extends {Ignored}
  */
