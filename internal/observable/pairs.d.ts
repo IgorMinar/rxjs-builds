@@ -1,5 +1,7 @@
 import { Observable } from '../Observable';
-import { SchedulerLike } from '../types';
+import { SchedulerAction, SchedulerLike } from '../types';
+import { Subscriber } from '../Subscriber';
+import { Subscription } from '../Subscription';
 /**
  * Convert an object into an observable sequence of [key, value] pairs
  * using an optional IScheduler to enumerate the object.
@@ -32,3 +34,11 @@ import { SchedulerLike } from '../types';
  * [key, value] pairs from the object.
  */
 export declare function pairs<T>(obj: Object, scheduler?: SchedulerLike): Observable<[string, T]>;
+/** @internal */
+export declare function dispatch<T>(this: SchedulerAction<any>, state: {
+    keys: string[];
+    index: number;
+    subscriber: Subscriber<[string, T]>;
+    subscription: Subscription;
+    obj: Object;
+}): void;

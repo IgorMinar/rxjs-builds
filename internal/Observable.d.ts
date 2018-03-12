@@ -11,15 +11,11 @@ import { OperatorFunction, PartialObserver, Subscribable } from '../internal/typ
  * @class Observable<T>
  */
 export declare class Observable<T> implements Subscribable<T> {
-    /**
-     * The source observable to get values from. This should only be used when
-     * overriding {@link lift}.
-     */
+    /** @internal */
+    _isScalar: boolean;
+    /** @internal */
     protected source: Observable<any>;
-    /**
-     * The operator definution to use as part of the operator chain. This should
-     * only be used when overriding {@link lift}.
-     */
+    /** @internal */
     protected operator: Operator<any, T>;
     /**
      * @constructor
@@ -57,6 +53,8 @@ export declare class Observable<T> implements Subscribable<T> {
      *  rejects with the handled error
      */
     forEach(next: (value: T) => void, promiseCtor?: PromiseConstructorLike): PromiseLike<void>;
+    /** @internal */
+    protected _subscribe(subscriber: Subscriber<any>): TeardownLogic;
     static if: typeof iif;
     pipe(): Observable<T>;
     pipe<A>(op1: OperatorFunction<T, A>): Observable<A>;

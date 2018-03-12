@@ -20,16 +20,9 @@ export class Observable<T> implements Subscribable<T> {
   /** @internal */
   public _isScalar: boolean = false;
 
-  /**
-   * The source observable to get values from. This should only be used when
-   * overriding {@link lift}.
-   */
+  /** @internal */
   protected source: Observable<any>;
-
-  /**
-   * The operator definution to use as part of the operator chain. This should
-   * only be used when overriding {@link lift}.
-   */
+  /** @internal */
   protected operator: Operator<any, T>;
 
   /**
