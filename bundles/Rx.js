@@ -1945,7 +1945,6 @@ var OuterSubscriber = /** @class */ (function (_super) {
 
 /**
  * We need this JSDoc comment for affecting ESDoc.
- * @internal
  * @ignore
  * @extends {Ignored}
  */
