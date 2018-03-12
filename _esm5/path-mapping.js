@@ -7,11 +7,8 @@ var dir = path.resolve(__dirname);
 module.exports = function() {
   return {
     "rxjs/websocket/index": path.join(dir, "websocket/index.js"),
-    "rxjs/websocket": path.join(dir, "websocket.js"),
     "rxjs/testing/index": path.join(dir, "testing/index.js"),
-    "rxjs/testing": path.join(dir, "testing.js"),
     "rxjs/operators/index": path.join(dir, "operators/index.js"),
-    "rxjs/operators": path.join(dir, "operators.js"),
     "rxjs/internal/util/tryCatch": path.join(dir, "internal/util/tryCatch.js"),
     "rxjs/internal/util/toSubscriber": path.join(dir, "internal/util/toSubscriber.js"),
     "rxjs/internal/util/subscribeToResult": path.join(dir, "internal/util/subscribeToResult.js"),
@@ -320,7 +317,6 @@ module.exports = function() {
     "rxjs/internal/AsyncSubject": path.join(dir, "internal/AsyncSubject.js"),
     "rxjs/index": path.join(dir, "index.js"),
     "rxjs/ajax/index": path.join(dir, "ajax/index.js"),
-    "rxjs/ajax": path.join(dir, "ajax.js"),
     "rxjs/add/operator/zipAll": path.join(dir, "add/operator/zipAll.js"),
     "rxjs/add/operator/zip": path.join(dir, "add/operator/zip.js"),
     "rxjs/add/operator/withLatestFrom": path.join(dir, "add/operator/withLatestFrom.js"),
